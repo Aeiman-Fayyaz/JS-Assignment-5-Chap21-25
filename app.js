@@ -5,6 +5,12 @@
 
 // ANSWER
 
+/*let firstName = prompt("Enter your first name")
+
+let lastName = prompt("Enter your last name")
+
+alert("Welcome " + firstName + "  " + lastName);*/
+
 // QUESTION 2
 // Write a program to take a user input about his favorite
 // mobile phone model. Find and display the length of user
@@ -12,11 +18,22 @@
 
 // ANSWER
 
+/*let userDevice = prompt("Enter your favorite mobile device")
+    document.write("My favourite phone is " + userDevice + "<br/>" 
+    + "Length of String = " + userDevice.length
+    )
+*/
+
 // QUESTION 3
 // Write a program to find the index of letter “n” in the word
 // “Pakistani” and display the result in your browser .
 
 // ANSWER
+
+/*let country = "Welcome to Pakistani"
+
+document.write("String = " + country + "<br/>" + "Index of 'n' = " + country.indexOf("n"));*/
+
 
 // QUESTION 4
 // Write a program to find the last index of letter “l” in the
@@ -24,14 +41,25 @@
 
 // ANSWER
 
+/*let greeting = "Hello World"
+
+document.write("String = " + greeting + "<br/>" + "Last Index of 'l' = " + greeting.lastIndexOf("l"))*/
+
 // QUESTION 5
 // Write a program to find the character at 3rd index in the
 // word “Pakistani” and display the result in your browser.
 
 // ANSWER
 
+
 // QUESTION 6
 // Repeat Q1 using string concat() method.
+
+/*let firstName = prompt("Enter your first name")
+
+let lastName = prompt("Enter your last name")
+
+alert("Welcome " + firstName.concat  (lastName));*/
 
 // ANSWER
 
@@ -40,6 +68,8 @@
 // word “Hyderabad” and display the result in your browser.
 
 // ANSWER
+
+
 
 // QUESTION 8
 // Write a program to replace all occurrences of “and” in the
