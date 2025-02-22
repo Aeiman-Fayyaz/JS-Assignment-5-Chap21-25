@@ -180,7 +180,7 @@ alert("Correct username")*/
 
 // ANSWER
 
-let myBakery = ["cake", "apple pie", "cookie" , "chips" , "patties"]
+/*let myBakery = ["cake", "apple pie", "cookie" , "chips" , "patties"]
 
 let userWant = prompt("Welcome to Aeiman's bakery... \nWhat you want?")
 
@@ -188,17 +188,21 @@ let userWantCap = userWant[0]
 
 let flag = false
 
-userWantCap.toUpperCase + userWant.toLowerCase
+// userWantCap.toUpperCase + userWant.toLowerCase
 
-userWant.toLowerCase() + userWant.toUpperCase()
+// userWant.toLowerCase() + userWant.toUpperCase()
 
-for(let i = 0 ; i < myBakery ; i++){
+for(let i = 0 ; i < myBakery.length ; i++){
     if (myBakery[i] == userWant){
         flag = true
-        document.write(userWant + "is available")
+        document.write(userWant + " is available")
         break;
     }
-}
+    if(!flag){
+        document.write("Sorry! We don't have " + userWant) 
+        break
+    }
+}*/
 
 
 // QUESTION 15
@@ -214,6 +218,8 @@ for(let i = 0 ; i < myBakery ; i++){
 
 // ANSWER
 
+
+
 // QUESTION 16
 // Write a program to convert the following string to an
 // array using string split method.
@@ -221,6 +227,13 @@ for(let i = 0 ; i < myBakery ; i++){
 // Display the elements of array in your browser.
 
 // ANSWER
+
+/*let uniName = "University of Karachi"
+
+let universityName = uniName.split("")
+
+document.write(universityName);*/
+
 
 // QUESTION 17
 // Write a program to display the last character of a user
@@ -234,3 +247,4 @@ for(let i = 0 ; i < myBakery ; i++){
 // occurrences of word “the” in given string.
 
 // ANSWER
+
