@@ -51,6 +51,12 @@ document.write("String = " + greeting + "<br/>" + "Last Index of 'l' = " + greet
 
 // ANSWER
 
+/*let nationality = "Pakistani"
+
+document.write("<h3>Find the character at 3rd index in word: </h3>" + "<br/>" + nationality);
+
+document.write("<h3>The character at 3rd index is: </h3>" + "<br/>" + nationality.charAt(3));*/
+
 
 // QUESTION 6
 // Repeat Q1 using string concat() method.
@@ -69,7 +75,11 @@ alert("Welcome " + firstName.concat  (lastName));*/
 
 // ANSWER
 
+/*let cityName = "Hyderabad"
 
+document.write("<h4>Before replacement: </h4>" + "<br/>" + cityName + "<br/>")
+
+document.write("<h4>After replacement: </h4>" + "<br/>" + cityName.replace ("Hyder" , "Islam"))*/
 
 // QUESTION 8
 // Write a program to replace all occurrences of “and” in the
@@ -79,11 +89,25 @@ alert("Welcome " + firstName.concat  (lastName));*/
 
 // ANSWER
 
+/*let message = "Ali and Sami are best friends. They play cricket and football together."
+
+document.write("<h4>Before replacement: </h4>" + "<br/>" + message + "<br/>")
+
+document.write("<h4>After replacement: </h4>" + "<br/>" + message.replace ("and" , "&") + "<br/>")*/
+
+
 // QUESTION 9
 // Write a program that converts a string “472” to a number
 // 472. Display the values & types in your browser.
 
 // ANSWER
+
+/*let numInString = "472"
+
+document.write("<h4>Value:</h4>" + numInString + "<br/>" + "<h4>Type:</h4>" + typeof numInString)
+
+document.write("<h4>Value:</h4>" + numInString + "<br/>" + "<h4>Type:</h4>" + typeof +numInString)*/
+
 
 // QUESTION 10
 // Write a program that takes user input. Convert and
@@ -91,11 +115,21 @@ alert("Welcome " + firstName.concat  (lastName));*/
 
 // ANSWER
 
+/*let userInput = prompt("Enter some text")
+
+document.write("<h4>User Input</h4>" + "<br/>" + userInput + "<br/>" + "<h4>Upper Case:</h4>" + "<br/>" + userInput.toUpperCase())*/
+
 // QUESTION 11
 // Write a program that takes user input. Convert and
 // show the input in title case.
 
 // ANSWER
+
+/*let anotherUserInput = prompt("Enter some text")
+
+let capitalized = anotherUserInput[0]
+
+document.write("<h4>User Input:</h4>" + "<br/>" + anotherUserInput + "<h4>Capitalized:</h4>" + "<br/>" + capitalized.toUpperCase() + anotherUserInput.toLowerCase())*/
 
 // QUESTION 12
 // Write a program that converts the variable num to
@@ -104,6 +138,12 @@ alert("Welcome " + firstName.concat  (lastName));*/
 // Remove the dot to display “3536” display in your browser.
 
 // ANSWER
+
+// let number = 35.36
+// document.write("<h4>Number: </h4>" + "<br/>" + number)
+// document.write("<h4>Type:</h4>" + "<br/>" + number.toString());
+
+
 
 // QUESTION 13
 // Write a program to take user input and store username
@@ -118,6 +158,16 @@ alert("Welcome " + firstName.concat  (lastName));*/
 
 // ANSWER
 
+/*let inputUserName = prompt ("Enter username")
+
+let specialCharacter = "! , . @ "
+
+if(inputUserName !== specialCharacter){
+    alert("Enter a valid username")
+}
+alert("Correct username")*/
+
+
 // QUESTION 14
 // You have an array
 // A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
@@ -129,6 +179,27 @@ alert("Welcome " + firstName.concat  (lastName));*/
 // should inform about its availability. Example:
 
 // ANSWER
+
+let myBakery = ["cake", "apple pie", "cookie" , "chips" , "patties"]
+
+let userWant = prompt("Welcome to Aeiman's bakery... \nWhat you want?")
+
+let userWantCap = userWant[0]
+
+let flag = false
+
+userWantCap.toUpperCase + userWant.toLowerCase
+
+userWant.toLowerCase() + userWant.toUpperCase()
+
+for(let i = 0 ; i < myBakery ; i++){
+    if (myBakery[i] == userWant){
+        flag = true
+        document.write(userWant + "is available")
+        break;
+    }
+}
+
 
 // QUESTION 15
 // Write a program to take password as an input from
