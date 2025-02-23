@@ -228,11 +228,16 @@ for(let i = 0 ; i < myBakery.length ; i++){
 
 // ANSWER
 
-/*let uniName = "University of Karachi"
+/*let uniName = "University"
+let uniName1 = "Of"
+let uniName2 = "Karachi"
 
 let universityName = uniName.split("")
 
-document.write(universityName);*/
+document.write(universityName);
+
+document.write(uniName1.split(""))
+document.write(uniName2.split(""))*/
 
 
 // QUESTION 17
