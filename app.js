@@ -139,11 +139,21 @@ document.write("<h4>User Input:</h4>" + "<br/>" + anotherUserInput + "<h4>Capita
 
 // ANSWER
 
-// let number = 35.36
-// document.write("<h4>Number: </h4>" + "<br/>" + number)
-// document.write("<h4>Type:</h4>" + "<br/>" + number.toString());
+/*let number = 35.36
 
+// Change in number to string
 
+let numStringConv = number.toString()
+
+// Remove . 
+
+let remvDot = numStringConv.indexOf(".")
+
+// Output
+
+let output = numStringConv.slice(0 , remvDot) + numStringConv.slice(remvDot +1)
+
+document.write("<h4>Number:</h4>" + "<br/>" + number + "<br/>" + "<h4>Number to String:</h4>" + output)*/
 
 // QUESTION 13
 // Write a program to take user input and store username
@@ -160,12 +170,15 @@ document.write("<h4>User Input:</h4>" + "<br/>" + anotherUserInput + "<h4>Capita
 
 /*let inputUserName = prompt ("Enter username")
 
-let specialCharacter = "! , . @ "
+let specialCharacter 
 
-if(inputUserName !== specialCharacter){
-    alert("Enter a valid username")
-}
-alert("Correct username")*/
+for(let i = 0 ; i < inputUserName.length ; i++){
+    specialCharacter = inputUserName.charCodeAt(i)
+    if(specialCharacter === 33 || specialCharacter === 44 || specialCharacter === 46 || specialCharacter === 64){
+        alert("Please enter a valid username")
+    }
+}*/
+
 
 
 // QUESTION 14
@@ -184,26 +197,19 @@ alert("Correct username")*/
 
 let userWant = prompt("Welcome to Aeiman's bakery... \nWhat you want?")
 
-let userWantCap = userWant[0]
+userWant = userWant.toLowerCase()
 
 let flag = false
 
-// userWantCap.toUpperCase + userWant.toLowerCase
-
-// userWant.toLowerCase() + userWant.toUpperCase()
-
 for(let i = 0 ; i < myBakery.length ; i++){
-    if (myBakery[i] == userWant){
+    if (userWant === myBakery[i]){
+        document.write(myBakery[i] + " is available at index " + i + " in our bakery")
         flag = true
-        document.write(userWant + " is available")
-        break;
     }
-    if(!flag){
-        document.write("Sorry! We don't have " + userWant) 
-        break
-    }
+}
+if(flag === false){
+    document.write("Sorry! We don't have " + userWant) 
 }*/
-
 
 // QUESTION 15
 // Write a program to take password as an input from
@@ -218,7 +224,11 @@ for(let i = 0 ; i < myBakery.length ; i++){
 
 // ANSWER
 
+let userPassword = prompt("Enter your password")
 
+// a. It should contain alphabets and numbers
+
+let num_letters = 
 
 // QUESTION 16
 // Write a program to convert the following string to an
@@ -228,16 +238,11 @@ for(let i = 0 ; i < myBakery.length ; i++){
 
 // ANSWER
 
-/*let uniName = "University"
-let uniName1 = "Of"
-let uniName2 = "Karachi"
+/*let uniName = "University of Karachi"
 
-let universityName = uniName.split("")
+document.write("<h4>Making Array:</h4>" + uniName.split())
 
-document.write(universityName);
-
-document.write(uniName1.split(""))
-document.write(uniName2.split(""))*/
+document.write("<h4>Array Split:</h4>" + uniName.split(""))*/
 
 
 // QUESTION 17
