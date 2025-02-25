@@ -224,7 +224,7 @@ if(flag === false){
 
 // ANSWER
 
-let userPassword = prompt("Enter your password")
+/*let userPassword = prompt("Enter your password")
 
 // a. It should contain alphabets and numbers
 
@@ -245,7 +245,7 @@ let passwordStart = true
 // a. Checking alphaphet charCode
 
 for (let i = 0 ; i < userPassword.length ; i++){
-    let charValue = userPassword[i].charCodeAt(0)
+    let charValue = userPassword[i].charCodeAt(0)    
 }
 
 // Alphabet in upperCase
@@ -263,7 +263,7 @@ else if (charValue >= 97 && charValue <= 122 ){
 // numbers
 
 for(let i = 0 ; i < userPassword.length ; i++){
-    var charValue = password[i].charCodeAt(0);  
+    var charValue = userPassword[i].charCodeAt(0);  
     if (charValue >= 48 && charValue <= 57 ){
         numChar = true;
     }
@@ -271,7 +271,7 @@ for(let i = 0 ; i < userPassword.length ; i++){
 
 // First Letter
 
-let charValue = userPassword.charCodeAt(0)
+charValue = userPassword.charCodeAt(0)
 if (charValue >= 48 && charValue <= 57 ){
     passwordStart = false;
 }
@@ -288,9 +288,7 @@ if(passwordChar === false || numChar === false || password_num_letters_length ==
 
 else{
     alert("Password Approved");
-}
-
-
+}*/
 
 // QUESTION 16
 // Write a program to convert the following string to an
@@ -320,6 +318,10 @@ for(let i = 0 ; i < uniName.length ; i++){
 
 // ANSWER
 
+/*let userWord = prompt("Enter any word")
+
+document.write("<h4>User given word:</h4>" + "<br/>" + userWord + "<h4>Last character of user given word:</h4>" + userWord[userWord.length-1])*/
+
 // QUESTION 18
 // You have a string “The quick brown fox jumps over the
 // lazy dog”. Write a program to count number of
@@ -327,3 +329,10 @@ for(let i = 0 ; i < uniName.length ; i++){
 
 // ANSWER
 
+/*let str = "The quick brown fox jumps over the lazy dog"
+
+let counter = str.match("the")
+
+let strLength = counter.length
+
+document.write("<h4>Text:</h4>" + "<br/>" + str + "<br/>" + "<h4>Check Ouurence:</h4>" + "<br/>" + " There are " + strLength + " occurrence(s) of word “the”")*/
