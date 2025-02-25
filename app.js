@@ -228,7 +228,69 @@ let userPassword = prompt("Enter your password")
 
 // a. It should contain alphabets and numbers
 
-let num_letters = 
+let password_num_letters_length = false
+
+// b. It should not start with a number
+
+let numChar = false
+
+// c. It must at least 6 characters long
+
+let passwordChar = false
+
+// Password Start
+
+let passwordStart = true
+
+// a. Checking alphaphet charCode
+
+for (let i = 0 ; i < userPassword.length ; i++){
+    let charValue = userPassword[i].charCodeAt(0)
+}
+
+// Alphabet in upperCase
+
+if (charValue >= 65 && charValue <= 90 ){
+    numChar = true;
+}
+
+// Alphabet in lowerCase
+
+else if (charValue >= 97 && charValue <= 122 ){
+    numChar = true;
+}
+
+// numbers
+
+for(let i = 0 ; i < userPassword.length ; i++){
+    var charValue = password[i].charCodeAt(0);  
+    if (charValue >= 48 && charValue <= 57 ){
+        numChar = true;
+    }
+}
+
+// First Letter
+
+let charValue = userPassword.charCodeAt(0)
+if (charValue >= 48 && charValue <= 57 ){
+    passwordStart = false;
+}
+
+// Length check
+
+if(userPassword.length >= 6){
+    password_num_letters_length = true;
+}
+
+if(passwordChar === false || numChar === false || password_num_letters_length === false || passwordStart === false){
+    alert("Enter valid Password");
+}
+
+else{
+    alert("Password Approved");
+}
+
+
 
 // QUESTION 16
 // Write a program to convert the following string to an
@@ -242,8 +304,15 @@ let num_letters =
 
 document.write("<h4>Making Array:</h4>" + uniName.split())
 
-document.write("<h4>Array Split:</h4>" + uniName.split(""))*/
+document.write("<h4>Array Split:</h4>" + uniName.split(""))
 
+// Loop
+
+document.write("<h4>Loop Method:</h4>")
+
+for(let i = 0 ; i < uniName.length ; i++){
+    document.write(uniName[i] + "<br/>")
+}*/
 
 // QUESTION 17
 // Write a program to display the last character of a user
